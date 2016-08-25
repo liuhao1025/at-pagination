@@ -6,7 +6,7 @@ A pagination components for VueJs
 
 `npm install git@https://github.com/liuhao1025/at-pagination.git`
 
-Add this line to your `webpack.config.js`
+Add these lines to your `webpack.config.js`
 
     module: {
       loaders: [
@@ -18,7 +18,7 @@ Add this line to your `webpack.config.js`
       ]
     }
 
-Import this components in your app
+Import this component in your app
 
     var AtPagination = require('at-pagination')
 or
