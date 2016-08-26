@@ -17,32 +17,12 @@
 </template>
 <script>
   import AtPagination from 'src/Pagination'
+  import AtPager from 'src/pager'
   var service = {
     get: function () {}
   }
-  var Pager = {
-    data () {
-      return {
-        query: {
-          page: 1,
-          pageSize: 10,
-          totalItems: 0
-        }
-      }
-    },
-    methods: {
-      changePage (page) {
-        this.query.page = page
-        typeof this.getData === 'function' && this.getData()
-      },
-      changeSize (size) {
-        this.query.pageSize = size
-        typeof this.resetData === 'function' && this.resetData()
-      }
-    }
-  }
   export default {
-    mixins: [Pager],
+    mixins: [AtPager],
     data () {
       return {
         name: 'PAGINATION',

@@ -1,6 +1,6 @@
 # At-Pagination
 
-A pagination components for VueJs
+A pagination components for VueJs. BTW, [Sony The Best][playstation] and the [demo][]
 
 # Install && Usage
 
@@ -20,10 +20,23 @@ Add these lines to your `webpack.config.js`
 
 Import this component in your app
 
-    var AtPagination = require('at-pagination')
+    var AtPagination = require('at-pagination').AtPagination
 or
 
-    import AtPagination from 'at-pagination' if you are using es6
+    import { AtPagination, AtPager } from 'at-pagination'
+
+if you are using es6
+
+Registry this component on Vue or another componet
+
+    {
+        mixins: [AtPager],
+        components： {
+            AtPagination
+        }
+    }
+
+***
 
 Use it in your template like this
 
@@ -45,9 +58,11 @@ A few props are available
 
 ## changePage
 
-
 @change-page
 
 ## changeSize
 
 @change-size
+
+[playstation]: https://asia.playstation.com
+[demo]: https://liuhao1025.github.io/at-pagination
