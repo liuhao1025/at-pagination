@@ -64,5 +64,21 @@ A few props are available
 
 @change-size
 
+# Pager
+
+## Props
+
+- query
+  - page 
+  - pageSize
+  - totalItems
+
+## Methods
+
+- getData
+- resetData
+- changePage
+- changeSize
+
 [playstation]: https://asia.playstation.com
 [demo]: https://liuhao1025.github.io/at-pagination

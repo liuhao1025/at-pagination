@@ -1,4 +1,4 @@
-const Pager = {
+export default {
   data () {
     return {
       query: {
@@ -9,6 +9,12 @@ const Pager = {
     }
   },
   methods: {
+    // @override
+    getData () { },
+    resetData () {
+      this.query.page = 1
+      this.getData()
+    },
     changePage (page) {
       this.query.page = page
       this.getData()
@@ -19,5 +25,3 @@ const Pager = {
     }
   }
 }
-
-export default Pager
