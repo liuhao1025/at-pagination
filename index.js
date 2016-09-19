@@ -1,7 +1,4 @@
-import Pagination from './src/pagination'
-import Pager from './src/pager'
+import AtPagination from './src/pagination'
+import AtPager from './src/pager'
 
-export default {
-  AtPagination,
-  AtPager
-}
+export { AtPager, AtPagination }

@@ -16,8 +16,7 @@
   </div>
 </template>
 <script>
-  import AtPagination from 'src/Pagination'
-  import AtPager from 'src/pager'
+  import { AtPager, AtPagination } from '../index'
   var service = {
     get: function () {}
   }
